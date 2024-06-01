@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MenuActionBar</string>
+    <string name="portrait_text">Portrait + John Smith (ID)</string>
+    <string name="landscape_text">Landscape + John Smith (ID)</string>
+    <string name="snackbar_message">John Smith</string>
+    <string name="snackbar_action">START</string>
+    <string name="hint_enter_digits">Enter 5 digits</string>
+    <string name="toast_start">You selected start!</string>
+    <string name="toast_accel">You selected Speed up!!</string>
+    <string name="toast_stop">You selected stop!</string>
+    <string name="toast_decel">You selected Slow Down!</string>
 </resources>
