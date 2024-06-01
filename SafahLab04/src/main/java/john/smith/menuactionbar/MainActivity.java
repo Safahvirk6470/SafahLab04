@@ -1,17 +1,17 @@
+package john.smith.menuactionbar;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import john.smith.menuactionbar.R;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
     private EditText editText;
 
     @Override
@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         editText = findViewById(R.id.editText);
 
-        ImageButton button = findViewById(R.id.button);
+        ImageButton button = findViewById(R.id.imageButton);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 long data = input.isEmpty() ? -2000 : Long.parseLong(input);
 
                 // Show snackbar with indefinite duration
-                Snackbar snackbar = Snackbar.make(v, "John Smith", Snackbar.LENGTH_INDEFINITE)
+                Snackbar snackbar = Snackbar.make(v, "Safah Virk", Snackbar.LENGTH_INDEFINITE)
                         .setAction("START", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 // Navigate to second activity
-                               // Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                                //intent.putExtra("data", data);
-                                //startActivity(intent);
+                                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                                intent.putExtra("data", data);
+                                startActivity(intent);
 
                                 // Clear input
                                 editText.setText("");
@@ -46,4 +47,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+   @Override
+  protected void onResume() {
+       super.onResume();
+       Log.d(TAG, "App resumed - Full Name: Safah Virk, Student ID: N01596470");
+   }
 }
+
