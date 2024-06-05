@@ -5,6 +5,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
 public class SecondActivity extends AppCompatActivity {
 
     private TextView textViewSecondScreen;
@@ -14,27 +16,27 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.second_activity);
 
-        textViewSecondScreen = findViewById(R.id.editText);
+        textViewSecondScreen = findViewById(R.id.textViewSecond);
         textViewUserData = findViewById(R.id.textView);
-        imageView = findViewById(R.id.imageButton);
-
+        imageView = findViewById(R.id.imageView2);
         // Set the text for TextViews
-        textViewSecondScreen.setText("My Second Screen - Safah Virk (N01596470)");
-        textViewUserData.setText("Number: " + getIntent().getLongExtra("userData", -1));
+        textViewSecondScreen.setText(getString(R.string.second_screen_text));
+        long data = getIntent().getLongExtra("data", -1);
+        textViewUserData.setText("Number: " + data);
 
         // Set the image for ImageView
-        int imageResource = getRandomImageResource(); // Define this method to get a random image resource
+        int imageResource = getRandomImageResource();
         imageView.setImageResource(imageResource);
     }
 
     private int getRandomImageResource() {
         // Implement this method to return a random image resource ID
         // For example:
-        // int[] images = {R.drawable.image1, R.drawable.image2, R.drawable.image3};
-        // Random random = new Random();
-        // return images[random.nextInt(images.length)];
-        return R.drawable.cat1; // Placeholder for demonstration
+        int[] images = {R.drawable.cat1, R.drawable.cat2, R.drawable.cat3};
+        Random random = new Random();
+        return images[random.nextInt(images.length)];
     }
+
 }
