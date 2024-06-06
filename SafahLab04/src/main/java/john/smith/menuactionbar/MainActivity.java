@@ -1,6 +1,7 @@
 package john.smith.menuactionbar;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "App resumed - Full Name: John Smith, Student ID: n01596470");
+        Log.d(TAG, "App resumed - Full Name: Safah Virk, Student ID: n01596470");
     }
 
     @Override
@@ -64,4 +65,10 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    // Ensure proper layout is loaded based on orientation
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        setContentView(R.layout.activity_main_land); // Load appropriate layout for landscape mode
+    }
 }
