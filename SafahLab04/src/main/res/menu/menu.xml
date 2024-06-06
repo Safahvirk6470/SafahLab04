@@ -1,29 +1,23 @@
+<!-- /path/to/your/project/res/menu/main_menu.xml -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
 
+    <item
+        android:id="@+id/dial"
+        android:title="@string/dial"
+        android:icon="@mipmap/phone_icon"
+        app:showAsAction="always" />
 
     <item
-        android:id="@+id/start"
-        android:title="Start!"
-        android:icon="@mipmap/ic_launcher"
-        app:showAsAction="always"
-        android:orderInCategory="1"></item>
+        android:id="@+id/exit"
+        android:title="@string/exit"
+        app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/stop"
-        android:title="Stop!"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/cat1"
-        android:orderInCategory="4"></item>
-    <item
-        android:id="@+id/accel"
-        android:title="Speed up!"
-        app:showAsAction="never"
-        android:orderInCategory="2"></item>
-    <item
-        android:id="@+id/decel"
-        android:title="Slow Down!"
-        app:showAsAction="ifRoom"
-        android:orderInCategory="3"></item>
+        android:id="@+id/help"
+        android:title="@string/help"
+        app:showAsAction="never" />
 
 </menu>

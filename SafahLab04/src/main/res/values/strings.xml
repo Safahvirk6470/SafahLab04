@@ -1,15 +1,26 @@
+<!-- /path/to/your/project/res/values/strings.xml -->
 <resources>
-    <string name="app_name">MenuActionBar</string>
+    <!-- Safah Virk (N01596470) -->
+    <string name="app_name">Safah Virk N01596470</string>
+    <string name="dial">Dial</string>
+    <string name="exit">Exit</string>
+    <string name="help">Help</string>
     <string name="portrait_text">Portrait + Safah Virk (N01596470)</string>
     <string name="landscape_text">Landscape + Safah Virk (N01596470)</string>
     <string name="snackbar_message">Safah Virk</string>
     <string name="snackbar_action">START</string>
     <string name="hint_enter_digits">Enter 5 digits</string>
-    <string name="toast_start">You selected start!</string>
-    <string name="toast_accel">You selected Speed up!!</string>
-    <string name="toast_stop">You selected stop!</string>
+    <string name="toast_start">You selected Start!</string>
+    <string name="toast_accel">You selected Speed up!</string>
+    <string name="toast_stop">You selected Stop!</string>
     <string name="toast_decel">You selected Slow Down!</string>
     <string name="second_screen_text">My Second Screen Safah Virk (N01596470)</string>
     <string name="number_text">Number: initial text</string>
-    <string name="button_description">Button to navigate to the second screen</string> <!-- Add this line -->
+    <string name="button_description">Button to navigate to the second screen</string>
+    <string name="start_action_clicked">Start action clicked</string>
+    <string name="stop_action_clicked">Stop action clicked</string>
+    <string name="speed_up_action_clicked">Speed up action clicked</string>
+    <string name="slow_down_action_clicked">Slow down action clicked</string>
+    <string name="toolbar_tittle">My Toolbar</string>
+
 </resources>

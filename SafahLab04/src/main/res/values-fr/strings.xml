@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MenuActionBar</string>
+    <string name="portrait_text">Portrait + Safah Virk (N01596470)</string>
+    <string name="landscape_text">Paysage + Safah Virk (N01596470)</string>
+    <string name="snackbar_message">Safah Virk</string>
+    <string name="snackbar_action">DÉMARRER</string>
+    <string name="hint_enter_digits">Entrez 5 chiffres</string>
+    <string name="toast_start">Vous avez sélectionné Démarrer !</string>
+    <string name="toast_accel">Vous avez sélectionné Accélérer !!</string>
+    <string name="toast_stop">Vous avez sélectionné Arrêter !</string>
+    <string name="toast_decel">Vous avez sélectionné Ralentir !</string>
+    <string name="second_screen_text">Mon deuxième écran Safah Virk (N01596470)</string>
+    <string name="number_text">Nombre : texte initial</string>
+    <string name="button_description">Bouton pour naviguer vers le deuxième écran</string>
+    <string name="start_action_clicked">Action Démarrer cliquée</string>
+    <string name="stop_action_clicked">Action Arrêter cliquée</string>
+    <string name="speed_up_action_clicked">Action Accélérer cliquée</string>
+    <string name="slow_down_action_clicked">Action Ralentir cliquée</string>
+    <string name="start">démarrer</string>
+    <string name="stop">arrêter</string>
+    <string name="accel">accélérer</string>
+    <string name="decel">ralentir</string>
+</resources>
