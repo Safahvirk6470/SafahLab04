@@ -1,0 +1,2 @@
+#SAFAHLAB04 N01596460
+##I created an Android app with two screens, MainActivity and SecondActivity. I implemented various UI elements, including TextViews, EditText, ImageButton, and ImageView. I added functionality to the app, including a menu, snackbar, and data passing between activities. I also managed the project on GitHub, including creating a repository, inviting a collaborator, and committing changes.
