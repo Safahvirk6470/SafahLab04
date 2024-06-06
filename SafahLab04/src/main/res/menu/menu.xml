@@ -13,7 +13,7 @@
         android:id="@+id/stop"
         android:title="Stop!"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/access"
+        android:icon="@drawable/cat1"
         android:orderInCategory="4"></item>
     <item
         android:id="@+id/accel"

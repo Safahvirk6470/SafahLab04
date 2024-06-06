@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MenuActionBar</string>
-    <string name="portrait_text">Portrait + Safah Virk (N01596470))</string>
+    <string name="portrait_text">Portrait + Safah Virk (N01596470)</string>
     <string name="landscape_text">Landscape + Safah Virk (N01596470)</string>
     <string name="snackbar_message">Safah Virk</string>
     <string name="snackbar_action">START</string>
@@ -11,4 +11,5 @@
     <string name="toast_decel">You selected Slow Down!</string>
     <string name="second_screen_text">My Second Screen Safah Virk (N01596470)</string>
     <string name="number_text">Number: initial text</string>
+    <string name="button_description">Button to navigate to the second screen</string> <!-- Add this line -->
 </resources>

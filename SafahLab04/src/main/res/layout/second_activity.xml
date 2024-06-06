@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="My Second Screen Safah Virk (N01596470)"
+        android:text="@string/second_screen_text"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
@@ -22,15 +22,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewSecond"
         android:layout_marginTop="50dp"
-        android:text="Number: initial text"
+        android:text="@string/number_text"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="158dp"
-        android:layout_height="6050dp"
+        android:layout_height="158dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/cat2" />
+        app:srcCompat="@drawable/cat1" />
 
 </RelativeLayout>
